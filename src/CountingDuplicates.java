@@ -16,11 +16,18 @@ public class CountingDuplicates {
         System.out.println(duplicateCount("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"));//26
     }
     public static int duplicateCount(String text) {
-        text=text.toLowerCase();
+        text = text.toLowerCase();
+        Set<Character> seen = new HashSet<>();
+        Set<Character> duplicates = new HashSet<>();
 
-        for(int i=0;i<text.length();i++){
-
+        for (int i = 0; i < text.length(); i++) {
+            char c = text.charAt(i);
+            if (seen.contains(c)) {
+                duplicates.add(c);
+            } else {
+                seen.add(c);
+            }
         }
-       return text.length();
+        return duplicates.size();
     }
 }
