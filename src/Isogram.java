@@ -21,6 +21,5 @@ public class Isogram {
             seen.add(c);
         }
         return true;
-
            }
 }
