@@ -14,8 +14,6 @@ public class _6kyuKata10 {
         int totalMinutes = hours * 60 + minutes;
 
         int minutesLeft = 1440-totalMinutes;
-//if(minutes ==0)minutesLeft = (24-hours)*60;
-//minutesLeft = (23-hours)*60 +(60-minutes);
 return minutesLeft+" "+(minutesLeft==1?"minute":"minutes");
     }
 
