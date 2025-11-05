@@ -15,7 +15,7 @@ public class _6kyu_CamelCaseMethod {
         StringBuilder result = new StringBuilder();
         String[] myWords = str.trim().split(" ");
                 for (String word : myWords) {
-                    if (word.length() <1) { continue; }
+                    if (word.isEmpty()) { continue; }
                     else {
                         String n = word.substring(0, 1).toUpperCase() + word.substring(1);
                         result.append(n);
