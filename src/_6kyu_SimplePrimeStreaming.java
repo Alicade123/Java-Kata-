@@ -27,6 +27,7 @@ public static String solve(int a, int b){
     for(int j=a;j<b+a;j++){
         results.append(str.charAt(j));
     }
-    return results+"";
+
+return results.toString();
 }
 }
