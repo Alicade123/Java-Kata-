@@ -17,7 +17,7 @@ public class _6kyu_ReversePolishNotationCalculator {
         for(String digit : expr.split(" ")){
             if (digit.equals("/")||digit.equals("*")||digit.equals("-")||digit.equals("+")){
             int first = Integer.parseInt(stack.get(stack.size()-2));
-            int second = Integer.parseInt(stack.getLast());
+            int second = Integer.parseInt(stack.get(stack.size()-1));
             stack.remove(stack.size()-2);
             stack.removeLast();
             switch (digit){
@@ -30,6 +30,7 @@ public class _6kyu_ReversePolishNotationCalculator {
                 stack.add(digit);
             }
         }
-        return  Double.parseDouble(stack.getFirst());
+
+        return  Double.parseDouble(stack.get(0));
     }
 }
