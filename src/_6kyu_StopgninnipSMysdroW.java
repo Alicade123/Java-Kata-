@@ -13,15 +13,21 @@ public class _6kyu_StopgninnipSMysdroW {
         int counter = 0;
         for(String word : words){
             counter++;
-            if(word.length()>4) {
-                if(counter == words.length ) result.append(new StringBuilder(word).reverse());
-                else result.append(new StringBuilder(word).reverse()).append(" ");
-            }
+            if(word.length()>4)
+                result.append(
+                        counter == words.length
+                                ? new StringBuilder(word).reverse()
+                                : new StringBuilder(word).reverse().append(" ")
+                );
 
-            else {
-                if(counter == words.length ) result.append(word);
-                else result.append(word).append(" ");
-            }
+
+            else
+                result.append(
+                        counter == words.length
+                                ? word
+                                : word+" "
+                );
+
         }
         return result.toString();
     }
