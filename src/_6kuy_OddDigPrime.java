@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class _6kuy_OddDigPrime {
-    public static void main(String[] args){
+    public static void main(){
         System.out.println(Arrays.toString(onlyOddDigPrimes(20)));//new long[]{7, 19, 31}
         System.out.println(Arrays.toString(onlyOddDigPrimes(40)));//new long[]{9, 37, 53}
         System.out.println(Arrays.toString(onlyOddDigPrimes(55)));//new long[]{10, 53, 59}
@@ -44,7 +44,7 @@ public class _6kuy_OddDigPrime {
         }
         public static long findnext(int x){
             boolean initial = false;
-            long next=0l;
+            long next=0;
         while (!initial){
             x++;
             if(isPrime(x)&&x%2!=0){
@@ -56,7 +56,7 @@ public class _6kuy_OddDigPrime {
                     } else if (q==numberString.length()-1&&Integer.parseInt(numberString.charAt(q)+"")%2!=0) {
                         initial = true;
                          next= Long.parseLong(x+"");
-                    };
+                    }
                 }
             }
         }
