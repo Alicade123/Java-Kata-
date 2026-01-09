@@ -1,4 +1,4 @@
-public class _6kyu_KeypadPhoneMessageWritting {
+public class _6kyu_KeypadPhoneMessageWriting {
     static void main() {
         System.out.println(presses("LOL"));//9
         System.out.println(presses("HOW R U"));//13
