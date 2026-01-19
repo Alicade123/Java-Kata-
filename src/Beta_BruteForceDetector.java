@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class BruteForceDetector {
+public class Beta_BruteForceDetector {
     public static void main(String[] args){
         System.out.println(detectBruteForce(new String[]{"192.168.1.1 LOGIN_FAIL user=admin", "192.168.1.1 LOGIN_FAIL user=admin", "192.168.1.1 LOGIN_FAIL user=admin"}));
         System.out.println(detectBruteForce(new String[] {"10.0.0.5 LOGIN_FAIL user=x", "10.0.0.5 LOGIN_FAIL user=x", "10.0.0.5 LOGIN_SUCCESS user=x", "10.0.0.5 LOGIN_FAIL user=x"}));
